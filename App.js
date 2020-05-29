@@ -3,14 +3,16 @@ import {
   View,
   Text,
 } from 'react-native';
+import { WebView } from 'react-native-webview';
 
 
 
-const App () => {
+const App = () => {
   return (
-    <View>
-        <Text>Hello</Text>
-    </View>
+    <WebView
+        source={{ uri: 'https://infinite.red' }}
+        style={{ marginTop: 20 }}
+      />
   );
 };
 
