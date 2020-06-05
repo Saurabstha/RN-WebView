@@ -1,21 +1,18 @@
-import React from 'react';
-import {
-  View,
-  Text,
-} from 'react-native';
-import { WebView } from 'react-native-webview';
+import React from 'react'
+import WebVieww from './src/screens/WebVieww';
+// import FetchApiClass from './src/screens/FetchApiClass';
+// import FetchApiHook from './src/screens/FetchApiHook';
+import FetchApiHook2 from './src/screens/FetchApiHook2';
+
+
 
 
 
 const App = () => {
+  
   return (
-    <WebView
-        source={{ uri: 'https://infinite.red' }}
-        style={{ marginTop: 20 }}
-      />
-  );
-};
+      <FetchApiHook2 />
+  )
+}
 
-
-
-export default App;
+export default App
